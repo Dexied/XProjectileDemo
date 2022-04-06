@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.27",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "XProjectileDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "XProjectile",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/d14f2ab896874b29baac1e6e404828e7"
+		}
+	]
+}
