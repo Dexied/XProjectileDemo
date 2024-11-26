@@ -1,1 +1,1 @@
-B:\UnrealEngine\UE_5.4\Engine\Build\BatchFiles\RunUAT.bat BuildPlugin -Plugin="B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin" -Package="B:\Projects\XProjectileDemo\Builds\XProjectile" -Rocket -2019
+B:\UnrealEngine\UE_5.5\Engine\Build\BatchFiles\RunUAT.bat BuildPlugin -Plugin="B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin" -Package="B:\Projects\XProjectileDemo\Builds\XProjectile" -Rocket -2019
