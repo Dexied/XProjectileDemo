@@ -8,7 +8,7 @@ public class XProjectileDemoTarget : TargetRules
 	public XProjectileDemoTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.V4;
 
 		ExtraModuleNames.AddRange( new string[] { "XProjectileDemo" } );
 	}
