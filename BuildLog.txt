@@ -1,12 +1,12 @@
-Running AutomationTool...
+﻿Running AutomationTool...
 Using bundled DotNet SDK version: 10.0 win-x64
 Starting AutomationTool...
-Parsing command line: BuildPlugin -Plugin=B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin -Package=B:\Projects\XProjectileDemo\Builds\XProjectile -Rocket -2019
+Parsing command line: BuildPlugin -Plugin="B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin  " -Package=B:\Projects\XProjectileDemo\Builds\XProjectile -Rocket -2019
 Initializing script modules...
 Total script module initialization time: 0.18 s.
 Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
 Executing commands...
-Copying 74 file(s) using max 64 thread(s)
+Copying 91 file(s) using max 64 thread(s)
 Reading plugin from B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin...
 Building plugin for host platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
@@ -27,7 +27,7 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 9 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 15.44 GB/67.91 GB committed
+  Memory 63.91 GB physical, 18.33 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/9] Compile Resource [x64] Default.rc2
 [2/9] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
@@ -39,13 +39,13 @@ Using Unreal Build Accelerator local executor to run 9 action(s)
 [8/9] Link [x64] UnrealEditor-XProjectile.dll
 [9/9] WriteMetadata UnrealEditor.target [NoUba]
 
-Total time in Unreal Build Accelerator local executor: 37.27 seconds
+Total time in Unreal Build Accelerator local executor: 39.05 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
 
 Result: Succeeded
-Total execution time: 68.36 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 12.2kb
-Took 68,74s to run dotnet.exe, ExitCode=0
+Total execution time: 47.47 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 10.2kb
+Took 47,90s to run dotnet.exe, ExitCode=0
 Building plugin for target platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
@@ -64,20 +64,20 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 4 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 14.9 GB/67.91 GB committed
+  Memory 63.91 GB physical, 17.85 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/4] Compile [x64] XProjectile.cpp
 [2/4] Compile [x64] Module.XProjectile.cpp
 [3/4] Compile [x64] XProjectileBase.cpp
 [4/4] Compile [x64] XProjectileProcessor.cpp
 
-Total time in Unreal Build Accelerator local executor: 10.57 seconds
+Total time in Unreal Build Accelerator local executor: 10.44 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
 
 Result: Succeeded
-Total execution time: 13.70 seconds
+Total execution time: 13.49 seconds
 Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.2kb
-Took 13,89s to run dotnet.exe, ExitCode=0
+Took 13,72s to run dotnet.exe, ExitCode=0
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
 Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
@@ -94,22 +94,291 @@ Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MS
 =================================
 Using Unreal Build Accelerator local executor to run 4 action(s)
   CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 14.46 GB/67.91 GB committed
+  Memory 63.91 GB physical, 17.27 GB/67.91 GB committed
   UBA Storage capacity 40 GB
 [1/4] Compile [x64] XProjectile.cpp
 [2/4] Compile [x64] Module.XProjectile.cpp
 [3/4] Compile [x64] XProjectileBase.cpp
 [4/4] Compile [x64] XProjectileProcessor.cpp
 
-Total time in Unreal Build Accelerator local executor: 8.67 seconds
+Total time in Unreal Build Accelerator local executor: 9.01 seconds
 Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
 
 Result: Succeeded
-Total execution time: 10.26 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.9kb
-Took 10,42s to run dotnet.exe, ExitCode=0
+Total execution time: 10.56 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.0kb
+Took 10,75s to run dotnet.exe, ExitCode=0
 Reading filter rules from B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Config\FilterPlugin.ini
 Loading FilterPluginWin64.ini
 BUILD SUCCESSFUL
-AutomationTool executed for 0h 1m 33s
+AutomationTool executed for 0h 1m 13s
+AutomationTool exiting with ExitCode=0 (Success)
+Running AutomationTool...
+Using bundled DotNet SDK version: 10.0 win-x64
+Starting AutomationTool...
+Parsing command line: BuildPlugin -Plugin="B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin  " -Package=B:\Projects\XProjectileDemo\Builds\XProjectile -Rocket -2019
+Initializing script modules...
+Total script module initialization time: 0.20 s.
+Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Copying 91 file(s) using max 64 thread(s)
+Reading plugin from B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin...
+Building plugin for host platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt
+HostProject.uproject is has no code, but is being treated as a code-based project for platforms Android, IOS, Linux, Mac, TVOS, Win64 because: GameplayInsights plugin is disabled. Creating temporary .Target.cs files.
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealEditor (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XProjectile unity file: XProjectile.cpp, XProjectileBase.cpp, XProjectileProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 9 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 24.77 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/9] Compile Resource [x64] Default.rc2
+[2/9] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
+[3/9] Compile [x64] XProjectile.cpp
+[4/9] Compile [x64] XProjectileBase.cpp
+[5/9] Compile [x64] Module.XProjectile.cpp
+[6/9] Compile [x64] XProjectileProcessor.cpp
+[7/9] Link [x64] UnrealEditor-XProjectile.lib
+[8/9] Link [x64] UnrealEditor-XProjectile.dll
+[9/9] WriteMetadata UnrealEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 43.45 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 53.36 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 10.8kb
+Took 53,86s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XProjectile unity file: XProjectile.cpp, XProjectileBase.cpp, XProjectileProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 24.24 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/4] Compile [x64] XProjectile.cpp
+[2/4] Compile [x64] Module.XProjectile.cpp
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(175,29): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Add(ActorToIgnore->GetUniqueID());
+			                         ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(185,32): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Remove(ActorToIgnore->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,41): error C2027: use of undefined type 'AActor'
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                                     ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,32): error C2672: 'TArray<uint32,FDefaultAllocator>::Contains': no matching overloaded function found
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\Core\Public\Containers\Array.h(1757,21): note: could be 'bool TArray<uint32,FDefaultAllocator>::Contains(const ComparisonType &) const'
+	[[nodiscard]] bool Contains(const ComparisonType& Item) const
+	                   ^
+[3/4] Compile [x64] XProjectileBase.cpp
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(175,29): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Add(ActorToIgnore->GetUniqueID());
+			                         ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(185,32): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Remove(ActorToIgnore->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,41): error C2027: use of undefined type 'AActor'
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                                     ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,32): error C2672: 'TArray<uint32,FDefaultAllocator>::Contains': no matching overloaded function found
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\Core\Public\Containers\Array.h(1757,21): note: could be 'bool TArray<uint32,FDefaultAllocator>::Contains(const ComparisonType &) const'
+	[[nodiscard]] bool Contains(const ComparisonType& Item) const
+	                   ^
+[4/4] Compile [x64] XProjectileProcessor.cpp
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(175,29): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Add(ActorToIgnore->GetUniqueID());
+			                         ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(185,32): error C2027: use of undefined type 'AActor'
+			IgnoreActorUniqueIDs.Remove(ActorToIgnore->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,41): error C2027: use of undefined type 'AActor'
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                                     ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h(23,7): note: see declaration of 'AActor'
+class AActor;
+      ^
+B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Source\XProjectile\Public\XProjectileBase.h(195,32): error C2672: 'TArray<uint32,FDefaultAllocator>::Contains': no matching overloaded function found
+			return IgnoreActorUniqueIDs.Contains(ActorToCheck->GetUniqueID());
+			                            ^
+B:\UnrealEngine\UE_5.8\Engine\Source\Runtime\Core\Public\Containers\Array.h(1757,21): note: could be 'bool TArray<uint32,FDefaultAllocator>::Contains(const ComparisonType &) const'
+	[[nodiscard]] bool Contains(const ComparisonType& Item) const
+	                   ^
+Total time in Unreal Build Accelerator local executor: 7.84 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 11.12 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 11.7kb
+Took 11,36s to run dotnet.exe, ExitCode=6
+UnrealBuildTool failed. See log for more details. (C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt)
+AutomationTool executed for 0h 1m 5s
+AutomationTool exiting with ExitCode=6 (6)
+BUILD FAILED
+Running AutomationTool...
+Using bundled DotNet SDK version: 10.0 win-x64
+Starting AutomationTool...
+Parsing command line: BuildPlugin -Plugin="B:\Projects\XProjectileDemo\Plugins\XProjectile\XProjectile.uplugin  " -Package=B:\Projects\XProjectileDemo\Builds\XProjectile -Rocket -2019
+Initializing script modules...
+Total script module initialization time: 0.19 s.
+Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Copying 91 file(s) using max 64 thread(s)
+Reading plugin from B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin...
+Building plugin for host platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt
+HostProject.uproject is has no code, but is being treated as a code-based project for platforms Android, IOS, Linux, Mac, TVOS, Win64 because: GameplayInsights plugin is disabled. Creating temporary .Target.cs files.
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealEditor (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XProjectile unity file: XProjectile.cpp, XProjectileBase.cpp, XProjectileProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 9 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 25.15 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/9] Compile Resource [x64] Default.rc2
+[2/9] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
+[3/9] Compile [x64] XProjectile.cpp
+[4/9] Compile [x64] XProjectileBase.cpp
+[5/9] Compile [x64] Module.XProjectile.cpp
+[6/9] Compile [x64] XProjectileProcessor.cpp
+[7/9] Link [x64] UnrealEditor-XProjectile.lib
+[8/9] Link [x64] UnrealEditor-XProjectile.dll
+[9/9] WriteMetadata UnrealEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 43.14 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 53.12 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 10.6kb
+Took 53,64s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XProjectile unity file: XProjectile.cpp, XProjectileBase.cpp, XProjectileProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 24.29 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/4] Compile [x64] XProjectile.cpp
+[2/4] Compile [x64] Module.XProjectile.cpp
+[3/4] Compile [x64] XProjectileBase.cpp
+[4/4] Compile [x64] XProjectileProcessor.cpp
+
+Total time in Unreal Build Accelerator local executor: 11.73 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
+
+Result: Succeeded
+Total execution time: 15.21 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.3kb
+Took 15,45s to run dotnet.exe, ExitCode=0
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\HostProject.uproject" -plugin="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\XProjectile.uplugin" -noubtmakefiles -manifest="B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+Writing manifest to B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XProjectile unity file: XProjectile.cpp, XProjectileBase.cpp, XProjectileProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 24.06 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/4] Compile [x64] XProjectile.cpp
+[2/4] Compile [x64] Module.XProjectile.cpp
+[3/4] Compile [x64] XProjectileBase.cpp
+[4/4] Compile [x64] XProjectileProcessor.cpp
+
+Total time in Unreal Build Accelerator local executor: 10.03 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
+
+Result: Succeeded
+Total execution time: 11.87 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.1kb
+Took 12,09s to run dotnet.exe, ExitCode=0
+Reading filter rules from B:\Projects\XProjectileDemo\Builds\XProjectile\HostProject\Plugins\XProjectile\Config\FilterPlugin.ini
+Loading FilterPluginWin64.ini
+BUILD SUCCESSFUL
+AutomationTool executed for 0h 1m 21s
 AutomationTool exiting with ExitCode=0 (Success)
